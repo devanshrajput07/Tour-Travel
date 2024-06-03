@@ -1,6 +1,7 @@
-import { Component } from "react";
+import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
+import { NavItems } from "./NavItems";
 
 class Navbar extends Component {
   render() {
@@ -9,42 +10,20 @@ class Navbar extends Component {
         <nav className="NavbarItems">
           <h1 className="navbar-logo">Tour-Travel</h1>
           <ul className="nav-menu">
-            <li>
-              <NavLink
-                to="/"
-                className="nav-links"
-                activeClassName="nav-links-active"
-              >
-                Home
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/services"
-                className="nav-links"
-                activeClassName="nav-links-active"
-              >
-                Services
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/products"
-                className="nav-links"
-                activeClassName="nav-links-active"
-              >
-                Products
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/contact-us"
-                className="nav-links"
-                activeClassName="nav-links-active"
-              >
-                Contact Us
-              </NavLink>
-            </li>
+            {NavItems.map((item, index) => {
+              return (
+                <li key={index}>
+                  <NavLink
+                    to={item.url}
+                    className={item.cName}
+                    activeClassName="nav-links-active"
+                  >
+                    {item.title}
+                  </NavLink>
+                </li>
+              );
+            })}
+            <button className="nav-button">Sign Up</button>
           </ul>
         </nav>
       </>

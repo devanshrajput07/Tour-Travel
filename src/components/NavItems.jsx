@@ -10,8 +10,8 @@ export const NavItems = [
     cName: "nav-links",
   },
   {
-    title: "Products",
-    url: "/products",
+    title: "About Us",
+    url: "/about",
     cName: "nav-links",
   },
   {

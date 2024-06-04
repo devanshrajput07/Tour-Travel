@@ -1,5 +1,6 @@
 import React from "react";
 import HeroSection from "../components/Hero";
+import Destination from "../components/Destination";
 
 function Home() {
   return (
@@ -14,6 +15,7 @@ function Home() {
         btnLink="/services"
         btnText="Get Started"
       />
+      <Destination />
     </>
   );
 }

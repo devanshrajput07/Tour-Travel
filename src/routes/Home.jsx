@@ -1,6 +1,7 @@
 import React from "react";
 import HeroSection from "../components/Hero";
 import Destination from "../components/Destination";
+import Trip from "../components/Trip";
 
 function Home() {
   return (
@@ -16,6 +17,7 @@ function Home() {
         btnText="Get Started"
       />
       <Destination />
+      <Trip />
     </>
   );
 }

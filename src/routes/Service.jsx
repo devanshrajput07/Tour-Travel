@@ -1,10 +1,19 @@
+import React from "react";
+import HeroSection from "../components/Hero";
+import ServiceImg from "../assets/night.jpg";
+
 function Service() {
-    return(
-       <>
-        <h1>Service</h1>
-      </>
-    );
-  }
-  
-  export default Service;
-  
+  return (
+    <>
+      <HeroSection
+        cName="HeroSection"
+        cName2="HeroSection_content"
+        Imgsrc={ServiceImg}
+        title="Service"
+        btnClass="hide"
+      />
+    </>
+  );
+}
+
+export default Service;

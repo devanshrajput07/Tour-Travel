@@ -1,14 +1,14 @@
 import React from "react";
-import "../components/HomeImgSection.css";
+import "../components/Hero.css";
 
-const HomeImgSection = (props) => {
+const HeroSection = (props) => {
   return (
     <div className={props.cName}>
       <img src={props.Imgsrc} alt="homeImg" />
-      <div className="HomeImgSection_content">
+      <div className={props.cName2}>
         <h1>{props.title}</h1>
         <p>{props.text}</p>
-        <a href={props.btnLink} className="{props.btnClass}">
+        <a href={props.btnLink} className={props.btnClass}>
           {props.btnText}
         </a>
       </div>
@@ -16,4 +16,4 @@ const HomeImgSection = (props) => {
   );
 };
 
-export default HomeImgSection;
+export default HeroSection;

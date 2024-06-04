@@ -1,0 +1,54 @@
+.HomeImgSection {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.HomeImgSection img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.HomeImgSection_content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+
+.HomeImgSection_content h1 {
+  font-size: 3rem;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.HomeImgSection_content p {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.HomeImgSection_content a {
+  padding: 1rem 2rem;
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.HomeImgSection_content a:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.HomeImgSection_content .show{
+  display: block;
+}

@@ -2,6 +2,7 @@ import React from "react";
 import HeroSection from "../components/Hero";
 import AboutImg from "../assets/night.jpg";
 import Footer from "../components/Footer";
+import AboutUs from "../components/AboutUs";
 
 function About() {
   return (
@@ -13,6 +14,7 @@ function About() {
         title="About"
         btnClass="hide"
       />
+      <AboutUs />
       <Footer />
     </>
   );

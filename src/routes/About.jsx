@@ -1,6 +1,7 @@
 import React from "react";
 import HeroSection from "../components/Hero";
 import AboutImg from "../assets/night.jpg";
+import Footer from "../components/Footer";
 
 function About() {
   return (
@@ -12,6 +13,7 @@ function About() {
         title="About"
         btnClass="hide"
       />
+      <Footer />
     </>
   );
 }

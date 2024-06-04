@@ -1,6 +1,8 @@
 import React from "react";
 import HeroSection from "../components/Hero";
 import ServiceImg from "../assets/night.jpg";
+import Footer from "../components/Footer";
+import Trip from "../components/Trip";
 
 function Service() {
   return (
@@ -12,6 +14,8 @@ function Service() {
         title="Service"
         btnClass="hide"
       />
+      <Trip />
+      <Footer />
     </>
   );
 }
